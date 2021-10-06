@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px 0px 100px;
+  border-bottom: 1px solid var(--color-gray-light-30);
+  height: 70px;
+  align-items: center;
+
+  &__menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-gray-dark-10);
+
+    &__item {
+      margin-left: 30px;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    &__item:hover {
+      color: var(--color-orange-base);
+    }
+
+    &__item--active {
+      color: var(--color-orange-base);
+    }
+  }
+}
