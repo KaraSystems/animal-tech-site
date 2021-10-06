@@ -1,0 +1,119 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*",
+    "dist",
+    "coverage"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "project": [
+          "tsconfig.json",
+          "tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "plugins": [
+        "@typescript-eslint",
+        "@angular-eslint"
+      ],
+      "rules": {
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@typescript-eslint/array-type": [
+          "error",
+          {
+            "default": "array"
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": ["error"],
+        "@typescript-eslint/consistent-type-definitions": "error",
+        "@typescript-eslint/dot-notation": "off",
+        "@typescript-eslint/member-ordering": [
+          "warn",
+          {
+            "default": [
+              "public-static-field",
+              "public-static-method",
+              "protected-static-field",
+              "protected-static-method",
+              "private-static-field",
+              "private-static-method",
+              "public-instance-field",
+              "protected-instance-field",
+              "private-instance-field",
+              "public-constructor",
+              "protected-constructor",
+              "private-constructor",
+              "public-instance-method",
+              "protected-instance-method",
+              "private-instance-method"
+            ]
+          }
+        ],
+        "@typescript-eslint/typedef": [
+          "warn",
+          {
+            "call-signature": true,
+            "parameter": true,
+            "propertyDeclaration": true,
+            "variableDeclaration": false,
+            "memberVariableDeclaration": false
+          }
+        ],
+        "@typescript-eslint/no-var-requires": "error",
+        "arrow-parens": [
+          "off",
+          "always"
+        ],
+        "dot-notation": "off",
+        "import/order": "off",
+        "indent": "off",
+        "max-classes-per-file": [
+          "error",
+          2
+        ],
+        "no-empty-function": "off",
+        "no-redeclare": "error",
+        "no-shadow": "error",
+        "no-unused-expressions": "error",
+        "no-use-before-define": "off",
+        "semi": ["warn", "always"],
+        "quotes": ["warn", "single"],
+        "valid-typeof": "error"
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
