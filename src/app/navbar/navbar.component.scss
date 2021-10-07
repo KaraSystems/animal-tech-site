@@ -17,6 +17,8 @@
       margin-left: 30px;
       padding: 5px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
     }
 
     &__item:hover {
@@ -31,10 +33,20 @@
       color: var(--color-orange-base);
     }
     &__language {
-      margin-left: 30px;
+      margin-left: 25px;
       cursor: pointer;
       display: flex;
       align-items: center;
+
+      > span {
+        display: flex;
+        align-items: center;
+
+        > svg-icon {
+          margin: 5px;
+          display: flex;
+        }
+      }
 
       > div {
         color: var(--color-gray-dark-10);
@@ -42,7 +54,7 @@
         display: none;
         position: absolute;
         z-index: 1;
-        margin: 50px -30px;
+        margin: 50px 4px;
         top: 0;
         width: 81px;
         background-color: var(--color-baseline-white);

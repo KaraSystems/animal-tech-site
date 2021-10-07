@@ -23,11 +23,11 @@ export class NavbarComponent implements OnInit {
     this.translate.use(lang);
   }
 
-  openLenguageOptions(): void {
-    if (this.selectedLang.nativeElement.style.display == 'flex') {
-      this.selectedLang.nativeElement.style.display = 'none';
+  openLenguageOptions(value: boolean): void {
+    if (value) {
+      this.selectedLang.nativeElement.style.display = 'flex';
       return;
     }
-    this.selectedLang.nativeElement.style.display = 'flex';
+    this.selectedLang.nativeElement.style.display = 'none';
   }
 }

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    AngularSvgIconModule.forRoot(),
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {

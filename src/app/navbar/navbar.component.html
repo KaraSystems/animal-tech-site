@@ -16,12 +16,21 @@
       routerLink="/card">
       {{'card' | translate}}
     </span>
-    <div class="navbar__menu__language" (click)="openLenguageOptions()">
+    <div
+      class="navbar__menu__language"
+      (mouseover)="openLenguageOptions(true)"
+      (mouseout)="openLenguageOptions(false)">
       <span>
-          {{ curretLanguage }}
+        <svg-icon src="assets/icons/language-icon.svg"></svg-icon>
+        {{ curretLanguage }}
+        <svg-icon src="assets/icons/angle-down-icon.svg"></svg-icon>
       </span>
       <div #selectedLang>
-        <span *ngFor="let language of translate.getLangs()" (click)="switchLang(language)"> {{ language }}</span>
+        <span *ngFor="let language of translate.getLangs()"
+          (click)="switchLang(language)"
+          (click)="openLenguageOptions(false)">
+          {{ language }}
+        </span>
       </div>
     </div>
   </div>
