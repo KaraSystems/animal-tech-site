@@ -8,8 +8,21 @@
       routerLinkActive="navbar__menu__item--active"
       routerLink="/"
       [routerLinkActiveOptions]="{exact: true}">
-      BUSINESS
+      {{'business' | translate}}
     </span>
-    <span class="navbar__menu__item" routerLinkActive="navbar__menu__item--active" routerLink="/card">CARD</span>
+    <span
+      class="navbar__menu__item"
+      routerLinkActive="navbar__menu__item--active"
+      routerLink="/card">
+      {{'card' | translate}}
+    </span>
+    <div class="navbar__menu__language" (click)="openLenguageOptions()">
+      <span>
+          {{ curretLanguage }}
+      </span>
+      <div #selectedLang>
+        <span *ngFor="let language of translate.getLangs()" (click)="switchLang(language)"> {{ language }}</span>
+      </div>
+    </div>
   </div>
 </div>
