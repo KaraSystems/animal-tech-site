@@ -11,6 +11,7 @@
     display: flex;
     justify-content: flex-end;
     color: var(--color-gray-dark-10);
+    text-transform: uppercase;
 
     &__item {
       margin-left: 30px;
@@ -24,6 +25,40 @@
 
     &__item--active {
       color: var(--color-orange-base);
+    }
+
+    &__language:hover {
+      color: var(--color-orange-base);
+    }
+    &__language {
+      margin-left: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      > div {
+        color: var(--color-gray-dark-10);
+        box-shadow: 0 5px 14px 0 rgb(0 0 0 / 14%);
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin: 50px -30px;
+        top: 0;
+        width: 81px;
+        background-color: var(--color-baseline-white);
+        flex-direction: column;
+        align-items: center;
+
+        > span {
+          padding: 5px;
+          width: -webkit-fill-available;
+          display: flex;
+          justify-content: center;
+        }
+        > span:hover {
+          background-color: var(--color-gray-light-40);
+        }
+      }
     }
   }
 }
