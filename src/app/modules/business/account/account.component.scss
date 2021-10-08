@@ -1,22 +1,20 @@
-:host {
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-}
+  border-bottom: 1px solid #8080802b;
 
-.account {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex:1;
-  padding: 70px 100px;
+  > div {
+    padding: 50px 0px;
+  }
 
   &__advantages {
-    width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     > span {
       font-size: 32px;
@@ -44,17 +42,15 @@
   }
 
   &__business {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin-right: 100px;
+    align-items: flex-start;
 
     &__card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 283px;
+      max-width: 283px;
       padding: 30px 50px;
       box-shadow: 0 4px 11px 0 rgb(0 0 0 / 14%);
       border: 1px solid #8080802b;
@@ -88,6 +84,21 @@
         text-transform: uppercase;
         cursor: pointer;
         margin: 10px 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+
+    &__advantages {
+      margin-left: 20px;
+      &__item {
+        &__detail {
+        margin-left: 20px;
+        }
       }
     }
   }

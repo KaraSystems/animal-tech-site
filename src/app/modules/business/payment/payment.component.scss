@@ -1,18 +1,16 @@
-:host {
-  width: 100%;
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--color-gray-light-40);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-}
+  align-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #8080802b;
 
-.payment {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex:1;
-  padding: 120px 0px 0px 100px;
+  > div {
+    padding: 50px 0px 50px 50px;
+  }
 
   &__detail {
     width: 40%;
@@ -35,11 +33,22 @@
 
   &__image {
     width: 60%;
+    max-width: 90%;
     display: flex;
     justify-content: flex-end;
 
     > img {
       max-width: 100%
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+
+    > div {
+      width: 100%;
     }
   }
 }

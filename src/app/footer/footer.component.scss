@@ -13,6 +13,8 @@
     justify-content: space-evenly;
 
     &__menu {
+      display: flex;
+      flex-wrap: wrap;
 
       > span:hover {
         color: var(--color-orange-base);

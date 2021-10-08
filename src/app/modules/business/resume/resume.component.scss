@@ -1,26 +1,21 @@
-:host {
-  width: 100%;
-  background-color: var(--color-baseline-white);
+.container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  border-bottom: 1px solid #8080802b;
-}
-
-.app {
-  padding: 50px 100px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex: 1;
   background-color: var(--color-gray-light-40);
+  align-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #8080802b;
+
+  > div {
+    padding: 50px 0px;
+  }
 
   &__resume {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
 
     > span {
       font-size: 38px;
@@ -46,7 +41,6 @@
     }
 
     &__stores {
-      width: 100%;
       display: flex;
       align-items: center;
       flex-direction: row;
@@ -66,7 +60,6 @@
   }
 
   &__image {
-    margin-right: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +86,16 @@
         border-radius: 33px;
         width: 300px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+
+    &__resume {
+      align-items: center;
     }
   }
 }
