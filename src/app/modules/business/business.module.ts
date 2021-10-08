@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ResumeComponent } from './resume/resume.component';
 import { AccountComponent } from './account/account.component';
 import { PaymentComponent } from './payment/payment.component';
+import { StoresComponent } from './stores/stores.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PaymentComponent } from './payment/payment.component';
     BusinessComponent,
     ResumeComponent,
     AccountComponent,
-    PaymentComponent
+    PaymentComponent,
+    StoresComponent
   ],
   imports: [
     CommonModule,

@@ -26,5 +26,9 @@
     "title": "All Your Payment Methods in",
     "oneAccount": "One Account",
     "detail": "Make payments and withdraw funds with a simple, quick and secure away which includes instant banking."
+  },
+  "stores": {
+    "downloadIOS": "Download for iOS",
+    "downloadAndroid": "Download for Android"
   }
 }

@@ -25,5 +25,9 @@
     "title": "Todos os Seus Métodos de Pagamento em",
     "oneAccount": "Uma Conta",
     "detail": "Efetue pagamentos e retire fundos de forma simples, rápida e segura que inclui banco instantâneo."
+  },
+  "stores": {
+    "downloadIOS": "Download para iOS",
+    "downloadAndroid": "Download para Android"
   }
 }
