@@ -11,7 +11,12 @@
     "workflow:test": "ng test --watch=false --browsers=ChromeHeadless",
     "workflow:lint": "ng lint",
     "prepare": "husky install",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "heroku-postbuild": "ng build"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "^7.0.0"
   },
   "private": true,
   "dependencies": {
