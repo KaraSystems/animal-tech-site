@@ -1,6 +1,6 @@
 {
   "name": "uzumaki",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +12,7 @@
     "workflow:lint": "ng lint",
     "prepare": "husky install",
     "lint": "ng lint",
-    "heroku-postbuild": "ng build"
+    "heroku-postbuild": "ng build --prod"
   },
   "engines": {
     "node": "16.x",
@@ -31,6 +31,7 @@
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "angular-svg-icon": "^12.0.0",
+    "express": "^4.17.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
