@@ -8,5 +8,26 @@
   "faq": " Perguntas frequentes",
   "privacyPolicy": "Política de Privacidade",
   "amlPolicy": "Política de AML",
-  "signIn": "Entrar"
+  "signIn": "Entrar",
+  "account": {
+    "advantagesTitle": "Assim como dinheiro real, mas melhor.",
+    "jetonFast": "Jeton é rápido",
+    "jetonFastDetail": "Depósito instantâneo e atualizações de saldo",
+    "jetonEasy": "Jeton é fácil",
+    "jetonEasyDetail": "Simplesmente é fácil de usar.",
+    "jetonFree": "Jeton é grátis",
+    "jetonFreeDetail": "Abra uma conta Jeton gratuitamente.",
+    "businessAccount": "Conta de negócios",
+    "businessAccountDetail": "Jeton permite que você solicite pagamentos por um bem e serviços que você forneceu. O preço Simple torna esta conta eficiente para o seu negócio, e de fácil acesso para seus clientes.",
+    "useForBusiness": "Use para negócios"
+  },
+  "payment": {
+    "title": "Todos os Seus Métodos de Pagamento em",
+    "oneAccount": "Uma Conta",
+    "detail": "Efetue pagamentos e retire fundos de forma simples, rápida e segura que inclui banco instantâneo."
+  },
+  "stores": {
+    "downloadIOS": "Download para iOS",
+    "downloadAndroid": "Download para Android"
+  }
 }

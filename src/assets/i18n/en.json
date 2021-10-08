@@ -8,5 +8,27 @@
   "faq": "FAQ",
   "privacyPolicy": "Privacy Policy",
   "amlPolicy": "AML Policy",
-  "signIn": "Sign In"
+  "signIn": "Sign In",
+  "resume": "Send money quickly, <br/> easily and fast.",
+  "account": {
+    "advantagesTitle": "Just like real cash, but better.",
+    "jetonFast": "Jeton is fast",
+    "jetonFastDetail": "Instant deposit and balance updates.",
+    "jetonEasy": "Jeton is easy",
+    "jetonEasyDetail": "Just is easy to user",
+    "jetonFree": "Jeton is free",
+    "jetonFreeDetail": "Open Jeton account for free.",
+    "businessAccount": "Business Account",
+    "businessAccountDetail": "Jeton allows you to request payments for a good and services that you have provided. The Simple pricing makes this account efficient to your business, and easy to access for your customers.",
+    "useForBusiness": "Use for Business"
+  },
+  "payment": {
+    "title": "All Your Payment Methods in",
+    "oneAccount": "One Account",
+    "detail": "Make payments and withdraw funds with a simple, quick and secure away which includes instant banking."
+  },
+  "stores": {
+    "downloadIOS": "Download for iOS",
+    "downloadAndroid": "Download for Android"
+  }
 }

@@ -1,0 +1,94 @@
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.account {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex:1;
+  padding: 70px 100px;
+
+  &__advantages {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    > span {
+      font-size: 32px;
+      margin-bottom: 50px;
+      color: var(--color-gray-dark-40);
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+
+      &__detail {
+        margin-left: 50px;
+
+        > span {
+          font-size: var(--text-xl);
+          color: var(--color-blue-light-10);
+        }
+        > p {
+          margin: 5px;
+          color: var(--color-gray-dark-10);
+        }
+      }
+    }
+  }
+
+  &__business {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 100px;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 283px;
+      padding: 30px 50px;
+      box-shadow: 0 4px 11px 0 rgb(0 0 0 / 14%);
+      border: 1px solid #8080802b;
+
+      > span {
+        margin-bottom: 20px;
+        font-size: var(--text-xl);
+        color: var(--color-gray-dark-40);
+      }
+
+      > p {
+        line-height: 1.5;
+        font-size: var(--text-md);
+        color: var(--color-gray-dark-10);
+        text-align: center;
+      }
+
+      > button:hover {
+        background: var(--color-blue-base);
+      }
+
+      > button {
+        background: var(--color-blue-light-10);
+        border: none;
+        font-size: var(--text-md);
+        font-weight: 500;
+        letter-spacing: -.1px;
+        padding: 14px 50px;
+        border-radius: 4px;
+        color: var(--color-baseline-white);
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 10px 0px;
+      }
+    }
+  }
+}
