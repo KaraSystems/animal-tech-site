@@ -9,6 +9,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { LoginModule } from './modules/login/login.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
