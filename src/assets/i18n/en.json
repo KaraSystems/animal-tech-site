@@ -21,5 +21,10 @@
     "businessAccount": "Business Account",
     "businessAccountDetail": "Jeton allows you to request payments for a good and services that you have provided. The Simple pricing makes this account efficient to your business, and easy to access for your customers.",
     "useForBusiness": "Use for Business"
+  },
+  "payment": {
+    "title": "All Your Payment Methods in",
+    "oneAccount": "One Account",
+    "detail": "Make payments and withdraw funds with a simple, quick and secure away which includes instant banking."
   }
 }
