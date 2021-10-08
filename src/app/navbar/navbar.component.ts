@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LoginService } from 'app/modules/login/services/login.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,12 +11,19 @@ export class NavbarComponent implements OnInit {
   @ViewChild('selectedLang', { static: false })  selectedLang!: ElementRef<HTMLElement>;
   curretLanguage: string = '';
 
-  constructor (public translate: TranslateService) {
+  constructor (
+    public translate: TranslateService,
+    public loginService: LoginService
+  ) {
     translate.addLangs(['en', 'pt']);
   }
 
   ngOnInit(): void {
     this.curretLanguage = this.translate.defaultLang;
+  }
+
+  openLogin(): void {
+    this.loginService.openLogin();
   }
 
   switchLang(lang: string): void {
