@@ -20,13 +20,8 @@ export class LoginComponent implements OnInit {
     this.loginService.listenOpenLogin
       .pipe(takeUntil(this.subs))
       .subscribe(() => {
-        this.openModal();
+        this.loginModal.open();
     });
-  }
-
-
-  public openModal(): void {
-    this.loginModal.open();
   }
 
   public ngOnDestroy(): void {
