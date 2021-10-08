@@ -16,6 +16,18 @@
       routerLink="/card">
       {{'card' | translate}}
     </span>
+    <span
+      class="navbar__menu__item">
+      {{'security' | translate}}
+    </span>
+    <span (click)="openLogin()"
+      class="navbar__menu__item">
+      {{'signUp' | translate}}
+    </span>
+    <span (click)="openLogin()"
+      class="navbar__menu__item">
+      {{'signIn' | translate}}
+    </span>
     <div
       class="navbar__menu__language"
       (mouseover)="openLenguageOptions(true)"

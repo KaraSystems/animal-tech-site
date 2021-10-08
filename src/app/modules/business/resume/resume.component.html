@@ -2,7 +2,7 @@
   <div class="app__resume">
     <span [innerHTML]="'resume' | translate"></span>
 
-    <button>{{'signIn' | translate}}</button>
+    <button (click)="openLogin()">{{'signIn' | translate}}</button>
 
     <div class="app__resume__stores">
       <a href="https://apps.apple.com/us/app/jeton-wallet-global-payments/id1190240579">
