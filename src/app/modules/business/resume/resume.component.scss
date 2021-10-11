@@ -1,16 +1,11 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--color-gray-light-40);
-  align-content: space-around;
   flex-direction: row;
-  width: 100%;
   border-bottom: 1px solid #8080802b;
-
-  > div {
-    padding: 50px 0px;
-  }
+  padding: 50px 10% 50px 5%;
 
   &__resume {
     display: flex;
@@ -73,7 +68,7 @@
 
       > img {
         box-shadow: 0 0px 5px 0 rgb(0 0 0 / 14%);
-        width: 250px;
+        max-width: 250px;
       }
     }
 
@@ -84,7 +79,7 @@
       > img {
         box-shadow: 0 2px 14px 0 rgb(0 0 0 / 14%);
         border-radius: 33px;
-        width: 300px;
+        max-width: 300px;
       }
     }
   }
@@ -93,6 +88,7 @@
 @media only screen and (max-width: 800px) {
   .container{
     flex-direction: column;
+    padding: 50px 5% 50px 5%;
 
     &__resume {
       align-items: center;

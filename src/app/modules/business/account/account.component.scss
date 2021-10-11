@@ -1,15 +1,9 @@
 .container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  flex-direction: row;
-  width: 100%;
   border-bottom: 1px solid #8080802b;
-
-  > div {
-    padding: 50px 0px;
-  }
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5% 50px 5%;
 
   &__advantages {
     display: flex;
@@ -50,7 +44,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 283px;
+      max-width: 400px;
       padding: 30px 50px;
       box-shadow: 0 4px 11px 0 rgb(0 0 0 / 14%);
       border: 1px solid #8080802b;

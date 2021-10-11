@@ -1,74 +1,79 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 100px 0px 100px;
-  border-bottom: 1px solid var(--color-gray-light-30);
-  height: 70px;
-  align-items: center;
+  padding: 0px 5%;
 
   &__menu {
-    flex: 1;
+    margin: 0 auto;
+    padding: 15px 0;
     display: flex;
-    justify-content: flex-end;
-    color: var(--color-gray-dark-10);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     text-transform: uppercase;
 
-    &__item {
-      margin-left: 30px;
-      padding: 5px;
-      cursor: pointer;
+    &__logo {
+      margin: 0 10px;
+    }
+
+    &--active {
+      color: var(--color-orange-base) !important;
+    }
+
+    > nav ul {
       display: flex;
-      align-items: center;
-    }
-
-    &__item:hover {
-      color: var(--color-orange-base);
-    }
-
-    &__item--active {
-      color: var(--color-orange-base);
-    }
-
-    &__language:hover {
-      color: var(--color-orange-base);
-    }
-    &__language {
-      margin-left: 25px;
-      cursor: pointer;
-      display: flex;
+      flex-wrap: wrap;
       align-items: center;
 
-      > span {
-        display: flex;
-        align-items: center;
-
-        > svg-icon {
-          margin: 5px;
-          display: flex;
-        }
+      > li a:hover {
+        color: var(--color-orange-base);
       }
 
-      > div {
+      > li a {
+        font-size: var(--text-md);
+        color: var(--color-gray-dark-10);
+        display: block;
+        padding: 10px;
+      }
+    }
+
+     &__language {
+       cursor: pointer;
+
+        > a {
+          display: flex !important;
+          align-items: center;
+
+          > span {
+            margin: 5px;
+          }
+        }
+
+       &__options {
         color: var(--color-gray-dark-10);
         box-shadow: 0 5px 14px 0 rgb(0 0 0 / 14%);
         display: none;
         position: absolute;
         z-index: 1;
-        margin: 50px 4px;
+        margin: 60px 4px;
         top: 0;
-        width: 81px;
         background-color: var(--color-baseline-white);
         flex-direction: column;
         align-items: center;
 
-        > span {
-          padding: 5px;
-          width: -webkit-fill-available;
+        > ul {
           display: flex;
-          justify-content: center;
-        }
-        > span:hover {
-          background-color: var(--color-gray-light-40);
+          justify-content: space-around;
+          flex-direction: column;
+
+          > li {
+            min-width: 100px;
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+          }
+
+          > li:hover {
+            background-color: var(--color-gray-light-40);
+          }
         }
       }
     }

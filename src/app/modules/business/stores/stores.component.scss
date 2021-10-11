@@ -1,12 +1,7 @@
 .container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  border-bottom: 1px solid #8080802b;
-  padding: 50px 0px;
+  justify-content: space-between;
+  padding: 50px 5% 50px 5%;
 
   &__card {
     margin: 2.5%;
@@ -16,7 +11,7 @@
     box-shadow: 0 4px 11px 0 rgb(0 0 0 / 14%);
     border: 1px solid #8080802b;
     padding: 50px 0px;
-    width: 100%;
+    flex: 1;
 
     > span {
       font-size: var(--text-xl);
@@ -27,7 +22,6 @@
       text-decoration: none;
       display: contents;
       img {
-        margin: 20px 110px;
         max-width: 200px;
       }
     }
