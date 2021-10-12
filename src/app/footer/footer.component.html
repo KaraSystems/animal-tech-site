@@ -1,23 +1,29 @@
-<div class="footer">
+<footer class="footer">
   <div class="footer__options">
-    <div class="footer__options__menu">
-      <span>{{'aboutUs' | translate}}</span>
-      <span>{{'support' | translate}}</span>
-      <span>{{'termsCondition' | translate}}</span>
-      <span>{{'contactUs' | translate}}</span>
-      <span>{{'faq' | translate}}</span>
-      <span>{{'privacyPolicy' | translate}}</span>
-      <span>{{'amlPolicy' | translate}}</span>
+    <div class="footer__options__actions">
+      <div class="footer__options__actions__menu">
+        <ul>
+          <li><a>{{'aboutUs' | translate}}</a></li>
+          <li><a>{{'support' | translate}}</a></li>
+          <li><a>{{'termsCondition' | translate}}</a></li>
+          <li><a>{{'contactUs' | translate}}</a></li>
+          <li><a>{{'faq' | translate}}</a></li>
+          <li><a>{{'privacyPolicy' | translate}}</a></li>
+          <li><a>{{'amlPolicy' | translate}}</a></li>
+      </ul>
+      </div>
+
+      <div class="footer__options__actions__buttons">
+        <button>JetonCARD</button>
+        <button>JetonPAY</button>
+      </div>
     </div>
 
-    <div class="footer__options__buttons">
-      <button>JetonCARD</button>
-      <button>JetonPAY</button>
-    </div>
-
-    <div class="footer__options__copyright">
-      <span>© 2019 Urus London LTD | 131 Finsbury Pavement, London EC2A 1NT United Kingdon</span>
+    <div class="footer__options__button">
+      <button (click)="openLogin()">{{'signIn' | translate}}</button>
     </div>
   </div>
-  <button (click)="openLogin()">{{'signIn' | translate}}</button>
-</div>
+  <div class="footer__copyright">
+    <span>© 2019 Urus London LTD | 131 Finsbury Pavement, London EC2A 1NT United Kingdon</span>
+  </div>
+</footer>

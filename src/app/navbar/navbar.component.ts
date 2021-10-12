@@ -11,6 +11,9 @@ export class NavbarComponent implements OnInit {
   @ViewChild('selectedLang', { static: false })  selectedLang!: ElementRef<HTMLElement>;
   curretLanguage: string = '';
 
+  openMenu: boolean = false;
+  mobile: boolean = false;
+
   constructor (
     public translate: TranslateService,
     public loginService: LoginService
@@ -20,9 +23,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.curretLanguage = this.translate.defaultLang;
+    if (window.screen.availWidth < 800) {
+        this.mobile = true;
+    }
   }
 
   openLogin(): void {
+    this.openMenu = false;
     this.loginService.openLogin();
   }
 
