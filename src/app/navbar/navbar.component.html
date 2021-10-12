@@ -1,29 +1,33 @@
-<header class="navbar">
+<header class="navbar" [ngClass]="{'navbar--active' : openMenu}">
   <div class="navbar__menu">
     <div class="navbar__menu__logo">
       <a href="/">
         <img src="assets/images/logo.svg">
       </a>
+      <a class="navbar__menu__logo__close" (click)="openMenu = !openMenu">
+        <svg-icon *ngIf="!openMenu" src="assets/icons/icon-menu.svg"></svg-icon>
+        <svg-icon *ngIf="openMenu" src="assets/icons/icon-close.svg"></svg-icon>
+      </a>
     </div>
-    <nav>
+    <nav *ngIf="openMenu || !this.mobile">
       <ul>
         <li>
-          <a routerLinkActive="navbar__menu--active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLinkActive="navbar__menu--active" (click)="this.openMenu = false" routerLink="/" [routerLinkActiveOptions]="{exact: true}">
           {{'business' | translate}}
           </a>
         </li>
         <li>
-          <a routerLinkActive="navbar__menu--active" routerLink="/card">
+          <a routerLinkActive="navbar__menu--active" (click)="this.openMenu = false" routerLink="/card">
           {{'card' | translate}}
           </a>
         </li>
         <li>
           <a>{{'security' | translate}}</a>
         </li>
-        <li>
+        <li class="navbar__menu__sign">
           <a (click)="openLogin()">{{'signUp' | translate}}</a>
         </li>
-        <li>
+        <li class="navbar__menu__sign">
           <a (click)="openLogin()">{{'signIn' | translate}}</a>
         </li>
         <li class="navbar__menu__language"
@@ -46,6 +50,10 @@
           </div>
         </li>
       </ul>
+      <div class="navbar__menu__buttons">
+        <button class="navbar__menu__buttons__sign-in" (click)="openLogin()">{{'signIn' | translate}}</button>
+        <button class="navbar__menu__buttons__sign-up" (click)="openLogin()">{{'signUp' | translate}}</button>
+      </div>
     </nav>
   </div>
 </header>
