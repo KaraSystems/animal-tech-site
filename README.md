@@ -1,4 +1,4 @@
-# Uzumaki Application
+# [Uzumaki Application](https://usumaki.herokuapp.com/)
 <img src="src/assets/images/logo.svg">
 <br/>
 
@@ -21,6 +21,7 @@ Summary
   - [Commitlint](#commitlint)
   - [GitHub Workflow](#gitHub-workflow)
 - [Build](#Build)
+- [Heroku](#heroku)
   <!--te-->
 ---
 
@@ -87,3 +88,7 @@ Auto run when a ***Pull Request*** is created on GitHub.
 Build
 =====
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+Heroku
+======
+Deploy the application into production [click here](https://usumaki.herokuapp.com/).
