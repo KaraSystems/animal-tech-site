@@ -2,7 +2,7 @@
   <div class="modal">
     <div class="modal__header">
       <div class="modal__header__title">
-        <span>Login</span>
+        <span>{{'login' | translate}}</span>
       </div>
 
       <div class="modal__header__close">
@@ -13,6 +13,31 @@
     </div>
 
     <div class="modal__body">
+      <div class="modal__body__tab">
+        <span [ngClass]="{'modal__body__tab--active': !userIdEmail}" (click)="userIdEmail=false">{{'phoneNumber' | translate}}</span>
+        <span [ngClass]="{'modal__body__tab--active': userIdEmail}" (click)="userIdEmail=true">{{'userIdEmail' | translate}}</span>
+      </div>
+      <div class="modal__body__form">
+        <form novalidate autocomplete="off">
+          <div class="modal__body__form__input" *ngIf="userIdEmail">
+            <input type="text" placeholder="{{'userIdEmail' | translate}}">
+            <span (click)="forgot('user')">{{'forgot' | translate}}</span>
+          </div>
+          <div class="modal__body__form__input" *ngIf="!userIdEmail">
+            <input type="text" placeholder="{{'phoneNumber' | translate}}">
+            <span (click)="forgot('phone')">{{'forgot' | translate}}</span>
+          </div>
+          <div class="modal__body__form__input">
+            <input type="password" placeholder="{{'password' | translate}}">
+            <span (click)="forgot('password')">{{'forgot' | translate}}</span>
+          </div>
+        </form>
+      </div>
+      <div class="modal__body__buttons">
+        <button class="modal__body__buttons__login">{{'login' | translate}}</button>
+        <button class="modal__body__buttons__qr-code"><svg-icon src="assets/icons/icon-qr-code.svg"></svg-icon>{{'loginQRCode' | translate}}</button>
+      </div>
+      <span>{{'newJeton' | translate}} <a>{{'signUpHere' | translate}}</a></span>
     </div>
   </div>
 </div>
