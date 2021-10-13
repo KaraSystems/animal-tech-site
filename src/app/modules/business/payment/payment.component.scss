@@ -1,25 +1,13 @@
-:host {
-  width: 100%;
+.container {
+  display: flex;
+  justify-content: space-around;
   background-color: var(--color-gray-light-40);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-}
-
-.payment {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex:1;
-  padding: 120px 0px 0px 100px;
+  border-bottom: 1px solid #8080802b;
+  padding: 50px 0 50px 5%;
 
   &__detail {
-    width: 40%;
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
-    max-width: 445px;
     font-size: 38px;
 
     &__account {
@@ -34,12 +22,25 @@
   }
 
   &__image {
-    width: 60%;
     display: flex;
     justify-content: flex-end;
 
     > img {
       max-width: 100%
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+
+    > div {
+      width: 100%;
+    }
+
+    &__image {
+      padding-top: 25px;
     }
   }
 }

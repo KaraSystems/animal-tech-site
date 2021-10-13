@@ -4,6 +4,7 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
 import { LoginComponent } from './login.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { LoginService } from './services/login.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { LoginService } from './services/login.service';
   ],
   imports: [
     CommonModule,
-    AngularSvgIconModule
+    AngularSvgIconModule,
+    TranslateModule
   ],
   exports: [ LoginComponent ],
   providers: [ LoginService ],

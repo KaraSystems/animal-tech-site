@@ -1,49 +1,59 @@
-<div class="navbar">
-  <div class="navbar__logo">
-    <img src="assets/images/logo.svg">
-  </div>
+<header class="navbar" [ngClass]="{'navbar--active' : openMenu}">
   <div class="navbar__menu">
-    <span
-      class="navbar__menu__item"
-      routerLinkActive="navbar__menu__item--active"
-      routerLink="/"
-      [routerLinkActiveOptions]="{exact: true}">
-      {{'business' | translate}}
-    </span>
-    <span
-      class="navbar__menu__item"
-      routerLinkActive="navbar__menu__item--active"
-      routerLink="/card">
-      {{'card' | translate}}
-    </span>
-    <span
-      class="navbar__menu__item">
-      {{'security' | translate}}
-    </span>
-    <span (click)="openLogin()"
-      class="navbar__menu__item">
-      {{'signUp' | translate}}
-    </span>
-    <span (click)="openLogin()"
-      class="navbar__menu__item">
-      {{'signIn' | translate}}
-    </span>
-    <div
-      class="navbar__menu__language"
-      (mouseover)="openLenguageOptions(true)"
-      (mouseout)="openLenguageOptions(false)">
-      <span>
-        <svg-icon src="assets/icons/language-icon.svg"></svg-icon>
-        {{ curretLanguage }}
-        <svg-icon src="assets/icons/angle-down-icon.svg"></svg-icon>
-      </span>
-      <div #selectedLang>
-        <span *ngFor="let language of translate.getLangs()"
-          (click)="switchLang(language)"
-          (click)="openLenguageOptions(false)">
-          {{ language }}
-        </span>
-      </div>
+    <div class="navbar__menu__logo">
+      <a href="/">
+        <img src="assets/images/logo.svg">
+      </a>
+      <a class="navbar__menu__logo__close" (click)="openMenu = !openMenu">
+        <svg-icon *ngIf="!openMenu" src="assets/icons/icon-menu.svg"></svg-icon>
+        <svg-icon *ngIf="openMenu" src="assets/icons/icon-close.svg"></svg-icon>
+      </a>
     </div>
+    <nav *ngIf="openMenu || !this.mobile">
+      <ul>
+        <li>
+          <a routerLinkActive="navbar__menu--active" (click)="this.openMenu = false" routerLink="/" [routerLinkActiveOptions]="{exact: true}">
+          {{'business' | translate}}
+          </a>
+        </li>
+        <li>
+          <a routerLinkActive="navbar__menu--active" (click)="this.openMenu = false" routerLink="/card">
+          {{'card' | translate}}
+          </a>
+        </li>
+        <li>
+          <a>{{'security' | translate}}</a>
+        </li>
+        <li class="navbar__menu__sign">
+          <a (click)="openLogin()">{{'signUp' | translate}}</a>
+        </li>
+        <li class="navbar__menu__sign">
+          <a (click)="openLogin()">{{'signIn' | translate}}</a>
+        </li>
+        <li class="navbar__menu__language"
+          (mouseover)="openLenguageOptions(true)"
+          (mouseout)="openLenguageOptions(false)">
+          <a>
+            <svg-icon src="assets/icons/language-icon.svg"></svg-icon>
+            <span>{{ curretLanguage }}</span>
+            <svg-icon src="assets/icons/angle-down-icon.svg"></svg-icon>
+          </a>
+          <div #selectedLang class="navbar__menu__language__options">
+            <ul>
+              <li *ngFor="let language of translate.getLangs()">
+                <a  (click)="switchLang(language)"
+                (click)="openLenguageOptions(false)">
+                  {{ language }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="navbar__menu__buttons">
+        <button class="navbar__menu__buttons__sign-in" (click)="openLogin()">{{'signIn' | translate}}</button>
+        <button class="navbar__menu__buttons__sign-up" (click)="openLogin()">{{'signUp' | translate}}</button>
+      </div>
+    </nav>
   </div>
-</div>
+</header>
