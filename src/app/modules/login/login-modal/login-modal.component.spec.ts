@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { LoginModalComponent } from './login-modal.component';
 
@@ -8,7 +9,9 @@ describe('LoginModalComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginModalComponent ]
+      declarations: [ LoginModalComponent ],
+      imports: [ TranslateModule.forRoot()],
+      providers: [ TranslateService ]
     })
     .compileComponents();
   });

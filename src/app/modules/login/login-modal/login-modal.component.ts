@@ -8,6 +8,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class LoginModalComponent implements OnInit {
   @ViewChild('modal', { static: false }) public modal!: ElementRef
 
+  userIdEmail: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +22,20 @@ export class LoginModalComponent implements OnInit {
 
   public close(): void {
     this.modal.nativeElement.style.display = 'none';
+  }
+
+  forgot(forgot: string): void {
+    if(forgot === 'user') {
+      //Forgot user
+    }
+
+    if(forgot === 'password') {
+      //Forgot password
+    }
+
+    if(forgot === 'phone') {
+      //Forgot phone
+    }
   }
 
 }
