@@ -1,4 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MailService } from 'app/shared/mail/mail.service';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login-modal',
@@ -10,7 +13,14 @@ export class LoginModalComponent implements OnInit {
 
   userIdEmail: boolean = true;
 
-  constructor() { }
+  public formContact: FormGroup = new FormGroup({
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    phone: new FormControl('', Validators.required),
+    comments: new FormControl(''),
+  });
+
+  constructor(private mailService: MailService) { }
 
   ngOnInit(): void {
   }
@@ -22,6 +32,22 @@ export class LoginModalComponent implements OnInit {
 
   public close(): void {
     this.modal.nativeElement.style.display = 'none';
+  }
+
+  public send(): void {
+    if (!this.formContact.valid) {
+      return;
+    }
+
+    const name = this.formContact.controls.name.value;
+    const email = this.formContact.controls.email.value;
+    const phone = this.formContact.controls.phone.value;
+    const comments = this.formContact.controls.comments.value;
+    const message = `Telefone: ${phone} - Comentário: ${comments}`;
+
+    this.mailService.sendEmail(name, email, message).pipe(take(1)).subscribe(res => {
+      this.close();
+    });
   }
 
   forgot(forgot: string): void {

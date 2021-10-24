@@ -8,7 +8,6 @@
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
 
     &__actions {
       display: flex;
@@ -23,11 +22,8 @@
 
           > li {
             display: flex;
-            > a:hover {
-              color: var(--color-orange-base);
-            }
 
-            > a {
+            > span {
               font-size: var(--text-md);
               color: var(--color-gray-dark-10);
               display: block;
@@ -85,7 +81,9 @@
 
   &__copyright{
     font-size: var(--text-xs);
-    color: var(--color-gray-base);;
+    color: var(--color-gray-base);
+    display: flex;
+    flex-direction: column;
   }
 }
 

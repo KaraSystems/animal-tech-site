@@ -17,28 +17,45 @@
   "signUpHere": "Inscrever-se aqui",
   "forgot": "Esqueci?",
   "phoneNumber": "Número telefone",
-  "userIdEmail": "ID Usuário ou E-mail",
+  "userIdEmail": "E-mail",
   "password": "Senha",
-  "resume": "Envie dinheiro rapidamente, <br/> com facilidade e rapidez.",
+  "resume": {
+    "title": "Tenha o controle de sua Granja<br/>na palma da mão.",
+    "first": "Nosso principal objetivo é auxiliar os agricultores em especial os criadores de porcos e suínos.",
+    "second": "O nosso sistema atende todos os tamanhos de granjas.",
+    "who": "Se você tem 1 porco ou suíno já pode utilizar nosso sistema."
+  },
   "account": {
-    "advantagesTitle": "Assim como dinheiro real, mas melhor.",
-    "jetonFast": "Jeton é rápido",
-    "jetonFastDetail": "Depósito instantâneo e atualizações de saldo",
-    "jetonEasy": "Jeton é fácil",
-    "jetonEasyDetail": "Simplesmente é fácil de usar.",
-    "jetonFree": "Jeton é grátis",
-    "jetonFreeDetail": "Abra uma conta Jeton gratuitamente.",
-    "businessAccount": "Conta de negócios",
-    "businessAccountDetail": "Jeton permite que você solicite pagamentos por um bem e serviços que você forneceu. O preço Simple torna esta conta eficiente para o seu negócio, e de fácil acesso para seus clientes.",
-    "useForBusiness": "Use para negócios"
+    "advantagesTitle": "Principais funcionalidades.",
+    "jetonFast": "Cadastro de Suínos",
+    "jetonFastDetail": "Tenha um resumo sobre cada suíno para facilitas seu dia.",
+    "jetonEasy": "Lançamento de medicamentos",
+    "jetonEasyDetail": "Registre todos os medicamentos aplicados para cada suíno.",
+    "jetonFree": "Registro de partos",
+    "jetonFreeDetail": "Registre todos os partos de cada suíno individualmente.",
+    "businessAccount": "Quer registrar sua granja?",
+    "businessAccountDetail": "Animal Tech permite que você faça o controle da sua granja de suínos. O site simples torna este sistema eficiente para o seu negócio, e de fácil acesso para seus usuários.",
+    "useForBusiness": "Use para granja"
   },
   "payment": {
-    "title": "Todos os Seus Métodos de Pagamento em",
-    "oneAccount": "Uma Conta",
-    "detail": "Efetue pagamentos e retire fundos de forma simples, rápida e segura que inclui banco instantâneo."
+    "title": "Inove a administração de sua granja",
+    "oneAccount": "Com um Sistema",
+    "detail": "Efetue o lançamento de seus dados e gere relatórios de forma simples."
   },
   "stores": {
     "downloadIOS": "Download para iOS",
     "downloadAndroid": "Download para Android"
-  }
+  },
+  "animalControl": "Tenha o controle de sua Granja<br/>na palma da mão",
+  "knowMore": "Saiber mais",
+  "contact": "Contato",
+  "send": "Enviar",
+  "phone": "Telefone",
+  "mail": "Email",
+  "comments": "Comentarios",
+  "name": "Nome",
+  "footer": {
+    "autor": "Jerferson Griza | Blumenau-SC Brasil"
+  },
+  "yoursData": "Deixe seus dados, para que nossa equipe possa emcaminhar os dados de acesso ao sistema."
 }

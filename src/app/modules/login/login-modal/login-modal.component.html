@@ -2,7 +2,7 @@
   <div class="modal">
     <div class="modal__header">
       <div class="modal__header__title">
-        <span>{{'login' | translate}}</span>
+        <span>{{'contact' | translate}}</span>
       </div>
 
       <div class="modal__header__close">
@@ -13,31 +13,31 @@
     </div>
 
     <div class="modal__body">
-      <div class="modal__body__tab">
-        <span [ngClass]="{'modal__body__tab--active': !userIdEmail}" (click)="userIdEmail=false">{{'phoneNumber' | translate}}</span>
-        <span [ngClass]="{'modal__body__tab--active': userIdEmail}" (click)="userIdEmail=true">{{'userIdEmail' | translate}}</span>
-      </div>
+      <p>{{'yoursData' | translate}}</p>
       <div class="modal__body__form">
-        <form novalidate autocomplete="off">
-          <div class="modal__body__form__input" *ngIf="userIdEmail">
-            <input type="text" placeholder="{{'userIdEmail' | translate}}">
-            <span (click)="forgot('user')">{{'forgot' | translate}}</span>
-          </div>
-          <div class="modal__body__form__input" *ngIf="!userIdEmail">
-            <input type="text" placeholder="{{'phoneNumber' | translate}}">
-            <span (click)="forgot('phone')">{{'forgot' | translate}}</span>
+        <form
+          novalidate autocomplete="off"
+          [formGroup]="formContact"
+          (keyup.enter)="send()">
+          <div class="modal__body__form__input">
+            <input formControlName="name" type="text" placeholder="{{'name' | translate}}">
           </div>
           <div class="modal__body__form__input">
-            <input type="password" placeholder="{{'password' | translate}}">
-            <span (click)="forgot('password')">{{'forgot' | translate}}</span>
+            <input formControlName="email" type="email" placeholder="{{'userIdEmail' | translate}}">
+          </div>
+          <div class="modal__body__form__input">
+            <input formControlName="phone" type="phone" placeholder="{{'phoneNumber' | translate}}">
+          </div>
+          <div class="modal__body__form__input">
+            <textarea formControlName="comments" type="text" placeholder="{{'comments' | translate}}"></textarea>
           </div>
         </form>
       </div>
       <div class="modal__body__buttons">
-        <button class="modal__body__buttons__login">{{'login' | translate}}</button>
-        <button class="modal__body__buttons__qr-code"><svg-icon src="assets/icons/icon-qr-code.svg"></svg-icon>{{'loginQRCode' | translate}}</button>
+        <button [disabled]="!formContact.valid" (click)="send()" class="modal__body__buttons__login" >{{'send' | translate}}</button>
       </div>
-      <span>{{'newJeton' | translate}} <a>{{'signUpHere' | translate}}</a></span>
+      <span>{{'phone' | translate}}: <a href="tel:+5541995368623">+55 41 99536-8623</a></span>
+      <span>{{'mail' | translate}}: <a href="mailto:jerfersongriza@gmail.com">jerfersongriza@gmail.com</a></span>
     </div>
   </div>
 </div>

@@ -5,6 +5,7 @@ import { LoginComponent } from './login.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { LoginService } from './services/login.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     AngularSvgIconModule,
-    TranslateModule
+    TranslateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [ LoginComponent ],
   providers: [ LoginService ],
