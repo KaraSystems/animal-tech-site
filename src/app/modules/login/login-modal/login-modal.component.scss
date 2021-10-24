@@ -64,6 +64,16 @@
     flex-direction: column;
     align-items: center;
 
+    > span {
+      margin-top: 10px;
+    }
+
+    > p {
+      line-height: 1.5;
+      font-size: var(--text-lg);
+      color: var(--color-gray-dark-10);
+    }
+
     &__tab {
       display: flex;
       justify-content: flex-start;
@@ -92,7 +102,7 @@
 
     &__form {
       width: 100%;
-
+      margin-top: 20px;
       > form {
         display: flex;
         flex-direction: column;
@@ -106,11 +116,11 @@
         margin-bottom: 20px;
         justify-content: flex-end;
 
-        > input:focus-visible {
+        > textarea, input:focus-visible {
           border: 2px solid rgb(191, 188, 197);
         }
 
-        > input {
+        > textarea, input {
           outline: none;
           font-size: var(--text-md);
           height: 48px;
@@ -119,6 +129,10 @@
           padding: 30px 30px;
           border-left: 4px solid rgb(191, 188, 197, 0.2);
           width: 100%;
+        }
+
+        > textarea {
+          height: 90px;
         }
 
         > span:hover {
@@ -142,12 +156,17 @@
       flex-direction: column;
       width: 100%;
 
+      > button:disabled {
+        background-color: var(--color-blue-light-10);
+        opacity: 0.5;
+      }
+
       > button {
         margin-bottom: 20px;
         margin-bottom: 20px;
         border-radius: 40px;
         font-size: var(--text-lg);
-        padding: 20px;
+        padding: 15px;
         border: none;
         color: var(--color-baseline-white);
         opacity: 0.9;

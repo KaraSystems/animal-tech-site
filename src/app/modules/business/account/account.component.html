@@ -2,7 +2,7 @@
   <div class="container__advantages">
     <span>{{'account.advantagesTitle' | translate}}</span>
     <div class="container__advantages__item">
-      <svg-icon src="assets/icons/icon-fast.svg"></svg-icon>
+      <img src="assets/images/swine.png" alt="32">
       <div class="container__advantages__item__detail">
         <span>{{'account.jetonFast' | translate}}</span>
         <p>{{'account.jetonFastDetail' | translate}}</p>
@@ -10,7 +10,7 @@
     </div>
 
     <div class="container__advantages__item">
-      <svg-icon src="assets/icons/icon-easy.svg"></svg-icon>
+      <img src="assets/images/syringe.png" alt="32">
       <div class="container__advantages__item__detail">
         <span>{{'account.jetonEasy' | translate}}</span>
         <p>{{'account.jetonEasyDetail' | translate}}</p>
@@ -18,7 +18,7 @@
     </div>
 
     <div class="container__advantages__item">
-      <svg-icon src="assets/icons/icon-use.svg"></svg-icon>
+      <img src="assets/images/piglet.png" alt="32">
       <div class="container__advantages__item__detail">
         <span>{{'account.jetonFree' | translate}}</span>
         <p>{{'account.jetonFreeDetail' | translate}}</p>
@@ -29,9 +29,9 @@
   <div class="container__business">
     <div class="container__business__card">
       <span>{{'account.businessAccount' | translate}}</span>
-      <svg-icon src="assets/icons/icon-bank.svg"></svg-icon>
+      <img src="assets/images/shed.png" alt="32">
       <p>{{'account.businessAccountDetail' | translate}}</p>
-      <button>{{'account.useForBusiness' | translate}}</button>
+      <button (click)="openLogin()">{{'account.useForBusiness' | translate}}</button>
     </div>
   </div>
 </section>

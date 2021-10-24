@@ -23,7 +23,7 @@ import { LoginModule } from './modules/login/login.module';
     HttpClientModule,
     AngularSvgIconModule.forRoot(),
     TranslateModule.forRoot({
-      defaultLanguage: 'en',
+      defaultLanguage: 'pt',
       loader: {
         provide: TranslateLoader,
         useFactory: httpTranslateLoader,

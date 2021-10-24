@@ -1,22 +1,16 @@
 <section class="container">
   <div class="container__resume">
-    <span [innerHTML]="'resume' | translate"></span>
-
-    <button (click)="openLogin()">{{'signIn' | translate}}</button>
-
-    <div class="container__resume__stores">
-      <a href="https://apps.apple.com/us/app/jeton-wallet-global-payments/id1190240579">
-        <svg-icon src="assets/images/appstore.svg"></svg-icon>
-      </a>
-      <span></span>
-      <a href="https://play.google.com/store/apps/details?id=com.jeton.wallet">
-        <svg-icon src="assets/images/googleplay.svg"></svg-icon>
-      </a>
-    </div>
+    <span [innerHTML]="'resume.title' | translate"></span>
+    <br/>
+    <p>{{'resume.first' | translate}}</p>
+    <p>{{'resume.second' | translate}}</p>
+    <br/>
+    <p>{{'resume.who' | translate}}</p>
+    <button (click)="openLogin()">{{'knowMore' | translate}}</button>
   </div>
   <div class="container__image">
     <div class="container__image__screen">
-      <img src="assets/images/app-screen.png">
+      <img src="assets/images/app-screen1.png">
     </div>
 
     <div class="container__image__phone">

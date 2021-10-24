@@ -20,8 +20,12 @@
       align-items: center;
       margin-bottom: 25px;
 
+      > img {
+        width: 32px;
+      }
+
       &__detail {
-        margin-left: 50px;
+        margin-left: 25px;
 
         > span {
           font-size: var(--text-xl);

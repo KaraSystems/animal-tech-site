@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LoginService } from 'app/modules/login/services/login.service';
 
 @Component({
@@ -6,15 +6,11 @@ import { LoginService } from 'app/modules/login/services/login.service';
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.scss']
 })
-export class ResumeComponent implements OnInit {
+export class ResumeComponent {
 
-  constructor(public loginService: LoginService) { }
-
-  ngOnInit(): void {
-  }
+  constructor(private loginService: LoginService) { }
 
   openLogin(): void {
     this.loginService.openLogin();
   }
-
 }

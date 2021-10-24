@@ -2,7 +2,8 @@
   <div class="navbar__menu">
     <div class="navbar__menu__logo">
       <a href="/">
-        <img src="assets/images/logo.svg">
+        <img src="assets/images/grade-globo.png" alt="32">
+        <span>Animal Tech</span>
       </a>
       <a class="navbar__menu__logo__close" (click)="openMenu = !openMenu">
         <svg-icon *ngIf="!openMenu" src="assets/icons/icon-menu.svg"></svg-icon>
@@ -11,25 +12,6 @@
     </div>
     <nav *ngIf="openMenu || !this.mobile">
       <ul>
-        <li>
-          <a routerLinkActive="navbar__menu--active" (click)="this.openMenu = false" routerLink="/" [routerLinkActiveOptions]="{exact: true}">
-          {{'business' | translate}}
-          </a>
-        </li>
-        <li>
-          <a routerLinkActive="navbar__menu--active" (click)="this.openMenu = false" routerLink="/card">
-          {{'card' | translate}}
-          </a>
-        </li>
-        <li>
-          <a>{{'security' | translate}}</a>
-        </li>
-        <li class="navbar__menu__sign">
-          <a (click)="openLogin()">{{'signUp' | translate}}</a>
-        </li>
-        <li class="navbar__menu__sign">
-          <a (click)="openLogin()">{{'signIn' | translate}}</a>
-        </li>
         <li class="navbar__menu__language"
           (mouseover)="openLenguageOptions(true)"
           (mouseout)="openLenguageOptions(false)">
@@ -51,7 +33,6 @@
         </li>
       </ul>
       <div class="navbar__menu__buttons">
-        <button class="navbar__menu__buttons__sign-in" (click)="openLogin()">{{'signIn' | translate}}</button>
         <button class="navbar__menu__buttons__sign-up" (click)="openLogin()">{{'signUp' | translate}}</button>
       </div>
     </nav>
