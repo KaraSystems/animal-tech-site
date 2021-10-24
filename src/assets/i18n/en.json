@@ -26,13 +26,13 @@
     "who": "If you have 1 pig or pig you can already use our system."
   },
   "account": {
-    "advantagesTitle": "Just like real cash, but better.",
-    "jetonFast": "Jeton is fast",
-    "jetonFastDetail": "Instant deposit and balance updates.",
-    "jetonEasy": "Jeton is easy",
-    "jetonEasyDetail": "Just is easy to user",
-    "jetonFree": "Jeton is free",
-    "jetonFreeDetail": "Open Jeton account for free.",
+    "advantagesTitle": "Main features.",
+    "jetonFast": "Swine Registration",
+    "jetonFastDetail": "Have a summary about each pig to make your day easier",
+    "jetonEasy": "Drug launch",
+    "jetonEasyDetail": "Record all medications applied for each pig",
+    "jetonFree": "Birth registration",
+    "jetonFreeDetail": "Record all deliveries of each pig individually.",
     "businessAccount": "Want to register your farm?",
     "businessAccountDetail": "Animal Tech allows you to take control of your pig farm. The simple website makes this system efficient for your business, and easy to access for your users.",
     "useForBusiness": "Use for farm"

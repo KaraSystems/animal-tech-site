@@ -28,13 +28,13 @@
   "account": {
     "advantagesTitle": "Principais funcionalidades.",
     "jetonFast": "Cadastro de Suínos",
-    "jetonFastDetail": "Tenha um resumo sobre cada suíno para facilitas seu dia.",
+    "jetonFastDetail": "Tenha um resumo sobre cada suíno para facilitar seu dia.",
     "jetonEasy": "Lançamento de medicamentos",
     "jetonEasyDetail": "Registre todos os medicamentos aplicados para cada suíno.",
     "jetonFree": "Registro de partos",
     "jetonFreeDetail": "Registre todos os partos de cada suíno individualmente.",
     "businessAccount": "Quer registrar sua granja?",
-    "businessAccountDetail": "Animal Tech permite que você faça o controle da sua granja de suínos. O site simples torna este sistema eficiente para o seu negócio, e de fácil acesso para seus usuários.",
+    "businessAccountDetail": "Animal Tech permite que você faça o controle da sua granja de suínos. De forma simples tornando este sistema eficiente para o seu negócio, e de fácil acesso para seus usuários.",
     "useForBusiness": "Use para granja"
   },
   "payment": {
@@ -47,15 +47,15 @@
     "downloadAndroid": "Download para Android"
   },
   "animalControl": "Tenha o controle de sua Granja<br/>na palma da mão",
-  "knowMore": "Saiber mais",
+  "knowMore": "Saber mais",
   "contact": "Contato",
   "send": "Enviar",
   "phone": "Telefone",
   "mail": "Email",
-  "comments": "Comentarios",
+  "comments": "Comentários",
   "name": "Nome",
   "footer": {
     "autor": "Jerferson Griza | Blumenau-SC Brasil"
   },
-  "yoursData": "Deixe seus dados, para que nossa equipe possa emcaminhar os dados de acesso ao sistema."
+  "yoursData": "Deixe seus dados, para que nossa equipe possa encaminhar os dados de acesso ao sistema."
 }
