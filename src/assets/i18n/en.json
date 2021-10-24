@@ -19,7 +19,12 @@
   "phoneNumber": "Phone Number",
   "userIdEmail": "UserID or E-mail",
   "password": "Password",
-  "resume": "Send money quickly, <br/> easily and fast.",
+  "resume": {
+    "title": "Have control of your Farm<br/>in the palm of your hand.",
+    "first": "Our main objective is to help farmers, especially pig and swine breeders.",
+    "second": "Our system caters to all sizes of farms.",
+    "who": "If you have 1 pig or pig you can already use our system."
+  },
   "account": {
     "advantagesTitle": "Just like real cash, but better.",
     "jetonFast": "Jeton is fast",
@@ -28,9 +33,9 @@
     "jetonEasyDetail": "Just is easy to user",
     "jetonFree": "Jeton is free",
     "jetonFreeDetail": "Open Jeton account for free.",
-    "businessAccount": "Business Account",
-    "businessAccountDetail": "Jeton allows you to request payments for a good and services that you have provided. The Simple pricing makes this account efficient to your business, and easy to access for your customers.",
-    "useForBusiness": "Use for Business"
+    "businessAccount": "Want to register your farm?",
+    "businessAccountDetail": "Animal Tech allows you to take control of your pig farm. The simple website makes this system efficient for your business, and easy to access for your users.",
+    "useForBusiness": "Use for farm"
   },
   "payment": {
     "title": "All Your Payment Methods in",
@@ -40,5 +45,17 @@
   "stores": {
     "downloadIOS": "Download for iOS",
     "downloadAndroid": "Download for Android"
-  }
+  },
+  "animalControl": "Tenha o controle de sua Granja<br/>na palma da mão",
+  "knowMore": "Know more",
+  "contact": "Contat",
+  "send": "Send",
+  "phone": "Phone",
+  "mail": "Email",
+  "comments": "Comments",
+  "name": "Name",
+  "footer": {
+    "autor": "Jerferson Griza | Blumenau-SC Brasil"
+  },
+  "yoursData": "Leave your data, so that our team can forward the system access data."
 }

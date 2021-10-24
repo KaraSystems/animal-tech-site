@@ -9,15 +9,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    text-transform: uppercase;
     width: 100%;
 
     &__logo {
       margin: 0 10px;
 
+      > a {
+        display: flex;
+        align-items: center;
+
+        > span {
+          margin-left: 2px;
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--color-blue-base);
+        }
+      }
+
       &__close {
         color: var(--color-gray-dark-10);
-        display: none;
+        display: none !important;
       }
     }
 
@@ -30,6 +41,7 @@
     }
 
     > nav ul {
+      text-transform: uppercase;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -124,7 +136,7 @@
         justify-content: space-between;
 
         &__close {
-          display: block;
+          display: block !important;
         }
       }
 
@@ -150,7 +162,7 @@
 
       &__language {
         &__options{
-          margin-top: 250px;
+          margin-top: 126px;
         }
       }
 
