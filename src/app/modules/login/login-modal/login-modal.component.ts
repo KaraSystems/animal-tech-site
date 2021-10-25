@@ -23,6 +23,7 @@ export class LoginModalComponent implements OnInit {
   constructor(private mailService: MailService) { }
 
   ngOnInit(): void {
+    this.mailService.sendEmailWithApi().pipe(take(1)).subscribe();
   }
 
 

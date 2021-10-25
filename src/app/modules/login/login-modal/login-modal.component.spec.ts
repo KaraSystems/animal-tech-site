@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MailService } from 'app/shared/mail/mail.service';
+import { of } from 'rxjs';
 
 import { LoginModalComponent } from './login-modal.component';
 
@@ -10,6 +11,11 @@ describe('LoginModalComponent', () => {
   let mailServiceStub: jasmine.SpyObj<MailService>;
 
   beforeEach(async () => {
+    mailServiceStub = jasmine.createSpyObj('AuthService', [
+      'sendEmailWithApi'
+    ]);
+    mailServiceStub.sendEmailWithApi.and.returnValue(of({}));
+
     await TestBed.configureTestingModule({
       declarations: [ LoginModalComponent ],
       imports: [ TranslateModule.forRoot()],

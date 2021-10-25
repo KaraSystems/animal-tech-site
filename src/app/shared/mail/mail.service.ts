@@ -17,4 +17,8 @@ export class MailService {
       { 'headers': headers }
     );
   }
+
+  public sendEmailWithApi(): Observable<any> {
+    return this.http.post('https://senju-api.herokuapp.com/sendMail', null);
+  }
 }
