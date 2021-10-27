@@ -20,7 +20,7 @@
   "userIdEmail": "E-mail",
   "password": "Senha",
   "resume": {
-    "title": "Tenha o controle de sua Granja<br/>na palma da mão.",
+    "title": "Tem uma Granja<br/>ou é pequeno agricultor?",
     "first": "Nosso principal objetivo é auxiliar os agricultores em especial os criadores de porcos e suínos.",
     "second": "O nosso sistema atende todos os tamanhos de granjas.",
     "who": "Se você tem 1 porco ou suíno já pode utilizar nosso sistema."
@@ -55,7 +55,7 @@
   "comments": "Comentários",
   "name": "Nome",
   "footer": {
-    "autor": "Jerferson Griza | Blumenau-SC Brasil"
+    "autor": "Blumenau-SC Brasil"
   },
   "yoursData": "Deixe seus dados, para que nossa equipe possa encaminhar os dados de acesso ao sistema."
 }

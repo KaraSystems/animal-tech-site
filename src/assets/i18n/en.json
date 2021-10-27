@@ -20,7 +20,7 @@
   "userIdEmail": "UserID or E-mail",
   "password": "Password",
   "resume": {
-    "title": "Have control of your Farm<br/>in the palm of your hand.",
+    "title": "Do you have a Farm<br/>or are you a small farmer?",
     "first": "Our main objective is to help farmers, especially pig and swine breeders.",
     "second": "Our system caters to all sizes of farms.",
     "who": "If you have 1 pig or pig you can already use our system."
@@ -55,7 +55,7 @@
   "comments": "Comments",
   "name": "Name",
   "footer": {
-    "autor": "Jerferson Griza | Blumenau-SC Brasil"
+    "autor": "Blumenau-SC Brasil"
   },
   "yoursData": "Leave your data, so that our team can forward the system access data."
 }
